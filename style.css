@@ -1,0 +1,192 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+nav a{
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: plum;
+}
+nav a:hover{
+    animation-name: nav;
+    animation-duration: 2s;
+}
+.web{
+    text-align: center;
+    font-size: 60px;
+    color: #4287f5;
+    margin-bottom: 50px;
+}
+.web:hover{
+    animation-name: weba;
+    animation-duration: 3s;
+    animation-delay: 0ms;
+}
+.about{
+    width: 600px;
+    height: 120px;
+    background-color:#ffffffb0 ;
+    border-radius: 4%;
+    margin-left: 31%;
+    
+}
+.about h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color:rgb(243, 122, 243);
+    padding: 20px 20px 20px 20px;
+
+}
+.about h3{
+    color:#4287f5a6;
+    text-align: center;
+}
+@keyframes weba {
+    10%{
+        font-family:'Courier New', Courier, monospace;
+    }
+    20%{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    30%{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    40%{
+        font-family: fantasy;
+    }
+    50%{
+        font-family:'Times New Roman', Times, serif;
+    }
+    60%{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    70%{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    80%{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    90%{
+        font-family: cursive;
+    }
+    100%{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif    ;
+    }
+
+
+}
+@keyframes nav{
+    0%{
+        font-size: 40px;
+
+    }
+    60%{
+        font-size: 50px;
+    }
+    100%{
+        font-size: 40px;
+    }
+}
+.TIPS li:hover{
+    font-size: 40px;
+    color: rgb(177, 107, 224);
+    
+}
+main h3{
+    color: #4287f5;
+    font-family: YSans;
+    font-size: 50px;
+    margin-left: 20px;
+    margin-bottom: 1px;
+    margin-top: 100px;
+}
+.TIPS li{
+    font-size: 25px;
+    marker:none;
+    color:rgb(190, 70, 190);
+    margin-left: 5px;
+    margin-bottom: 2px;
+    font-style:initial;
+    font-family: Ysansl;
+}
+@font-face {
+    font-family: "YSans";  
+    src: url("font.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+@font-face {
+    font-family: "YSansL";  
+    src: url("font-light.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  } 
+header h1{
+    font-family: Ysans;
+    color: plum;
+    text-align: center;
+}
+.aboutme{
+    color: #4287f5;
+
+    font-size:25px;
+    margin-left: 10px;
+}
+.aboutme p{
+    font-family: YSansl;
+    text-align: center;
+    font-size: 30px;
+}
+span{
+    color: #f54242;
+}
+.aboutme h2{
+    font-style: Ysansl;
+    color:#48bdf3;
+    text-align: center;
+    font-size: 35px;
+}
+main h2{
+    text-align: center;
+    font-family: Ysans;
+}
+.work-item{
+    font-family: Ysansl;
+    color: #4287f5;
+    text-align: center;
+}
+.work-item img{
+    width: 350px;
+    height: 500px;
+    border:#4287f5 double 1px;
+}
+.work-item2{
+    font-family: Ysansl;
+    color: #4287f5;
+    text-align: center;
+    margin-top: 100px;
+
+}
+.work-item{
+    font-family: Ysansl;
+    color: #4287f5;
+    text-align: center;
+
+}
+.work-item2 img{
+    width: 600px;
+    height: 350px;
+    border:#4287f5 double 1px;
+}
+.work-item2 img:hover{
+    width: 700px;
+    height: 450px;
+    border:#4287f5 double 2px;
+}
+.work-item img:hover{
+    width: 450px;
+    height: 600px;
+    border:#4287f5 double 2px;
+}

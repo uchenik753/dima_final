@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="def-style.css">
+</head>
+<body>
+    <?php 
+function check_mobile_device() { 
+	$mobile_agent_array = array('ipad', 'iphone', 'android', 'pocket', 'palm', 'windows ce', 'windowsce', 'cellphone', 'opera mobi', 'ipod', 'small', 'sharp', 'sonyericsson', 'symbian', 'opera mini', 'nokia', 'htc_', 'samsung', 'motorola', 'smartphone', 'blackberry', 'playstation portable', 'tablet browser');
+	$agent = strtolower($_SERVER['HTTP_USER_AGENT']);
+	foreach ($mobile_agent_array as $value) {
+		if (strpos($agent, $value) !== false) return true;
+	}
+	return false;
+}
+?>
+    <script>document.querySelectorAll('a').forEach((elem) => {
+
+        elem.onmouseenter =
+        elem.onmouseleave = (e) => {
+    
+            const tolerance = 5
+    
+            const left = 0
+            const right = elem.clientWidth
+    
+            let x = e.pageX - elem.offsetLeft
+    
+            if (x - tolerance < left) x = left
+            if (x + tolerance > right) x = right
+    
+            elem.style.setProperty('--x', `${ x }px`)
+    
+        }
+    
+    })</script>
+    <nav>
+        <a href="page-main.html">Главная</a>
+        <a href="page-about-me.html">Об авторе</a>
+        <a href="page-information.html">Мои работы          </a>
+    </nav>
+</body>
+
+</html>
